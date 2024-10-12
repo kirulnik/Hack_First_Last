@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <meta charset="UTF-8">
+      <script src="https://code.jquery.com/jquery-3.6.3.js"  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="  crossorigin="anonymous"> </script>
+      <script type="text/javascript" src="jquery.cookie.js"></script>
+      <title>Restaurant</title>
+  </head>
+
+  <body>
+      <div class="header">
+          <div class="container_h">
+              <a href="index.html"><img src="logo.png" alt="" class="logo"></a> <!-- лого -->
+
+              <button class="login" onclick="window.location.href='Dostavka.html'">Вернуться назад</button>
+          </div>
+      </div>
+
+      <div class="end_h"></div>
+
+      <div id="orderForm">
+        <form id="orderFormContent" method="post">
+            <label for="dishes">Выберите блюда:</label>
+            <select id="dishes" name="dishes[]" multiple>
+                <option value="op1">Говядина в мятном маринаде с артишоками</option>
+                <option value="op2">Курица в сливочном соусе со шпинатом</option>
+                <option value="op3">Фрикасе из куропатки</option>
+                <option value="op4">Каре ягненка</option>
+                <option value="op5">Рыба в панцире из морской соли</option>
+                <option value="op6">Телятина с белыми грибами и тимьяном</option>
+                <option value="op7">Форель с овощным жюльеном</option>
+                <option value="op8">Треска с миндалем (Morue amandine)</option>
+                <option value="op9">Стейк с овощами</option>
+                <option value="op10">Фермерский салат</option>
+                <option value="op11">Круассаны</option>
+                <option value="op12">Карпаччо из трески</option>
+                <option value="op13">Буйабес</option>
+                <option value="op14">Фуа-гра</option>
+            </select>
+
+            <label for="fullName">ФИО заказчика:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="address">Адрес заказчика:</label>
+            <input type="text" id="address" name="address" required>
+
+            <button type="submit" class="dish">Подтвердить заказ</button>
+        </form>
+    </div>
+
+    <div id="orderConfirmation" style="display: none;">
+        Ваш заказ находится в сборке.
+    </div>
+      <script src="main.js"></script>
+  </body>
+</html>

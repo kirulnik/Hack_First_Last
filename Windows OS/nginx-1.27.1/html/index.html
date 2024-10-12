@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="  crossorigin="anonymous"> </script>
+    <script type="text/javascript" src="jquery.cookie.js"></script>
+    <title>Restaurant</title>
+</head>
+<body>
+<!-- ============================START HEADER============================ -->
+    <div class="header">
+        <div class="container_h">
+            <a href="index.html"><img src="logo.png" alt="" class="logo"></a> <!-- лого -->
+
+            <div class="buttons">
+                <a href="#sec1" class="btn">Меню</a>
+                <a href="#sec2" class="btn">Команда</a>
+                <a href="#sec3" class="btn">Отзывы</a>
+            </div>
+
+            <button class="login">Войти в ЛК</button>
+        </div>
+    </div>
+<!-- ============================END HEADER============================ -->
+
+    <div class="end_h"></div>
+<!-- ============================START BODY============================ -->
+    <div class="body">
+        <div class="container_b">
+            <div class="t_menu" id="sec1">
+                Меню
+            </div>
+            <div>
+                <table class = "psevdoGrid">
+                    <tr>
+                        <td>
+                            <a href="Govaydina.html">
+                                <button type="submit" class="dish">Говядина в мятном маринаде с артишоками</button>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Kurica.html">
+                                <button type="submit" class="dish">Курица в сливочном соусе со шпинатом</button>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="Frikase.html">
+                                <button type="submit" class="dish">Фрикасе из куропатки</button>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Kareya.html">
+                                <button type="submit" class="dish">Каре ягненка</button>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="Riba.html">
+                                <button type="submit" class="dish">Рыба в панцире из морской соли</button>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Telyatina.html">
+                                <button type="submit" class="dish">Телятина с белыми грибами и тимьяном</button>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="Forel.html">
+                                <button type="submit" class="dish">Форель с овощным жюльеном</button>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Treska.html">
+                                <button type="submit" class="dish">Треска с миндалем (Cod Amandine)</button>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="Stake.html">
+                                <button type="submit" class="dish">Стейк с овощами</button>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Fuagra.html">
+                                <button type="submit" class="dish">Фуа-гра</button>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="Farmilka.html">
+                                <button type="submit" class="dish">Фермерский салат</button>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Hruhru.html">
+                                <button type="submit" class="dish">Круассаны</button>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="Karpachcho.html">
+                                <button type="submit" class="dish">Карпаччо из трески</button>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Buabes.html">
+                                <button type="submit" class="dish">Буйабес</button>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="t_menu">
+                Наша команда
+            </div>
+             
+            <div class="menu" id="sec2">
+                <button type="submit" class="dish">Виктор Баринов</button>
+                <button type="submit" class="dish">Лев Соловьёв</button>
+                <button type="submit" class="dish">Максим Лавров</button>
+                <button type="submit" class="dish">Олег Монгол</button>
+                <button type="submit" class="dish">Виктория Гончарова</button>
+                <button type="submit" class="dish">Настя</button>
+                <button type="submit" class="dish">Лудовик Бенуа</button>
+            </div>
+
+            <div class="chat-popup" id="myForm">
+                <form action="" class="form-container">
+                    <h1>Чат</h1>
+
+                    <label for="msg"><b>Сообщение</b></label>
+                    <textarea placeholder="Введите сообщение.." name="msg" required></textarea>
+
+                    <button type="submit" class="btn">Отправить</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- ============================END BODY============================ -->
+
+    <div class="end_h"></div>
+<!-- ============================START FOOTER============================ -->
+    <div class="footer">
+        <div class="container_f" id="sec3">
+            <form class="fb" action="#" method="post"> <!-- ТУТ ПОМЕНЯТЬ НАДО -->
+                <p><input type="text" id="feedback" class="feedback" placeholder="Оставьте здесь свой отзыв)"></p>
+
+                <div>
+                    <span><input type="text" id="fb_name" class="name" placeholder="А как вас зовут?"></span>
+                    <button class="btn_fb" id="btn_fb">Запостить</button>
+                </div>
+            </form>
+
+            <div class="work">
+                <button class="btn_work" onclick="window.location.href='work.html'">Работа на нас</button>
+                <div class="work_t">
+                    Хочешь работать с нами?
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ============================END FOOTER============================ -->
+<!-- ============================START REG============================ -->
+    <div class="popup_bg">
+            <div class="popup">
+                <form id = "formAuth" >
+                    <input id = "loginField" name = "username" class="name1" type="text"  placeholder=" Логин" required>
+                    <input id = "passField" name = "password" class="name1" type="password"  placeholder=" Пароль" required>
+                    <select name = "position">
+                        <option>Повар</option>
+                         <option>Официант</option>
+                    </select>
+                    <input type="submit" class="sub" value = "Войти" type="submit">
+                </form>
+                <img class="close-popup" src="" alt="">
+            </div>
+    </div>
+<!-- ============================END REG============================ -->
+        <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,653 @@
+@font-face
+{
+	font-family: 'Raleway';
+	font-optical-sizing: auto;
+	font-weight:<weight>;
+	font-style: normal;
+}
+
+body
+{
+	background-color: #b9b9b9;
+	margin: 0;
+}
+
+.header
+{
+	display: flex;
+	justify-content: center;
+	background-color: #b9b9b9;
+	z-index: 1;
+}
+
+.container_h
+{
+
+	max-width: 100%;
+	width: 1080px;
+	display: flex;
+	align-items: center;
+	text-align: right;
+	position: relative;
+}
+
+.logo
+{
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.logo_desc
+{
+	margin-left: 80px;
+	max-width: 500px;
+	max-height: 500px;
+}
+
+.buttons
+{
+	margin-left: 1vh;
+	display: flex;
+	align-items: center;
+}
+
+.btn
+{
+	display: flex;
+	font-family: 'Raleway';
+	font-weight: 600;
+	padding: 15px 40px;
+	background-color: #ffa200;
+	color: #dc143c;
+	text-decoration: none;
+	font-size: 21px;
+	margin: 0 1vh;
+	transition: background-color 0.2s linear;
+	transition: color 0.2s linear;
+	border-radius: 3px;
+}
+
+.btn:hover
+{
+	background-color: #dc143c;
+	color: #ffa200;
+}
+
+.login
+{	
+	font-family: 'Raleway';
+	font-weight: 600;
+	padding: 15px 40px;
+	background-color: #dc143c;
+	color: #ffa200;
+	text-decoration: none;
+	font-size: 21px;
+	transition: background-color 0.2s linear;
+	transition: color 0.2s linear;
+	border-radius: 3px;
+	position: absolute;
+	right: 0;
+}
+
+.login:hover
+{
+	background-color: #ffa200;
+	color: #dc143c;
+}
+
+.end_h
+{
+	height: 1vh;
+	width: 100%;
+	background-color: #ffa200;
+}
+
+.body
+{
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+}
+
+.container_b
+{
+	max-width: 100%;
+	width: 1080px;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+
+.t_menu
+{
+	margin-top: 15px;
+	color: #ffa200;
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 47px;
+	text-decoration: underline;
+}
+
+/*.menu*/
+/*{*/
+/*	margin-top: 5vh;*/
+/*	display: inline-block;*/
+/*}*/
+
+.dish
+{
+	font-family: 'Raleway';
+	font-weight: 800;
+	font-size: 37px;
+	color: #dc143c;
+	margin-left: 8vh;
+	margin-bottom: 2vh;
+	text-decoration: underline;
+}
+
+.dish_desc
+{
+	font-family: 'Raleway';
+	font-weight: 800;
+	font-size: 20px;
+	margin-left: 8vh;
+	margin-bottom: 2vh;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.menu_desc {
+  /*display: grid;*/
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.menu div {
+  border-top: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // добавляете в див иконку и текст, все само встанет как надо
+}
+
+.menu div:nth-child(-n+3) {
+  border-top: 0;
+}
+
+.menu div:nth-child(3n) {
+  border-right: 0;
+}
+
+
+.footer
+{
+	position: relative;
+	height: 100%;
+	padding-top: .6vh;
+	padding-bottom: 2vh;
+	background-color: #dc143c;
+	display: flex;
+	justify-content: center;
+}
+
+.container_f
+{
+	max-width: 100%;
+	width: 1080px;
+	display: flex;
+	position: relative;
+}
+
+.feedback
+{
+	font-family: 'Raleway';
+	font-weight: 500;
+	font-size: 20px;
+	width: 700px;
+	height: 90px;
+	border-radius: 9px;
+	border-color: #ffa200;
+	outline: 7px solid #ffa200;
+	border-inline: none;
+	border-style: none;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+.feedback_work
+{
+	font-family: 'Raleway';
+	font-weight: 500;
+	font-size: 20px;
+	width: 100%; /* Ширина на весь контейнер */
+  height: 100px; /* Высота */
+  box-sizing: border-box;
+  resize: both;
+	border-radius: 9px;
+	border-color: #ffa200;
+	outline: 7px solid #ffa200;
+	border-inline: none;
+	border-style: none;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+.name
+{
+	font-family: 'Raleway';
+	font-weight: 500;
+	font-size: 20px;
+	width: 500px;
+	height: 40px;
+	border-radius: 9px;
+	border-color: #ffa200;
+	outline: 7px solid #ffa200;
+	border-inline: none;
+	border-style: none;
+	padding-left: 20px;
+}
+
+.btn_fb
+{
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 20px;
+	width: 175px;
+	height: 40px;
+	color: #dc143c;
+	border-radius: 9px;
+	border-color: #ffa200;
+	outline: 7px solid #ffa200;
+	border-inline: none;
+	border-style: none;
+	margin-left: 20px;
+	transition: background-color 0.2s linear;
+	transition: color 0.2s linear;
+}
+
+.btn_fb:hover
+{
+	color: #ffa200;
+	background-color: #dc143c;
+}
+
+.work
+{
+	position: absolute;
+	right: 0;
+	margin-top: 15px;
+
+}
+
+.btn_work
+{
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 20px;
+	width: 320px;
+	height: 90px;
+	color: #dc143c;
+	border-radius: 9px;
+	border-color: #ffa200;
+	outline: 7px solid #ffa200;
+	border-inline: none;
+	border-style: none;
+	transition: background-color 0.2s linear;
+	transition: color 0.2s linear;
+}
+
+.btn_work:hover
+{
+	background-color: #dc143c;
+	color: #ffa200;
+}
+
+.work_t
+{
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 27px;
+	color: #ffa200;
+	margin-top: 30px;
+}
+
+.popup_bg
+{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 5;
+}
+
+.popup
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 320px;
+	border-radius: 15px;
+	background: #fff;
+	transform: translate(-50%, -50%);
+	padding-top: 30px;
+	border: 6px solid #ffa200;
+	z-index: 10;
+}
+
+.close-popup
+{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	height: 23px;
+}
+
+.popup form
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.popup form input
+{
+	border: 4px solid #ffa200;
+	border-radius: 10px;
+	height: 53px;
+	width: 330px;
+	margin: 9px 0;
+}
+
+.popup select
+{
+	border: 4px solid #ffa200;
+	border-radius: 10px;
+	height: 53px;
+	width: 350px;
+	margin: 9px 0;
+	color: #ffa200;
+	font-weight: 600;
+	font-size: 15px;
+	font-family: 'Raleway';
+}
+.name1
+{
+	font-family: 'Raleway';
+	font-size: 20px;
+	font-weight: 600;
+	color: #dc143c;
+}
+
+input[type=text]::placeholder 
+{
+	color: #ffa200;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: 'Raleway';
+}
+
+input[type=password]::placeholder 
+{
+	color: #ffa200;
+	font-weight: 600;
+	font-size: 15px;
+	font-family: 'Raleway';
+}
+
+
+.sub
+{
+	font-family: 'Raleway';
+	color: #dc143c;
+	background-color: #ffa200;
+	font-weight: 700;
+	font-size: 23px;
+	transition: color 0.2s linear;
+	transition: backgroun-color 0.2s linear;
+}
+
+.sub:hover
+{
+	background-color: #dc143c;
+	color: #ffa200;
+}
+
+.let
+{
+	max-height: 100px;
+	width: 1080px;
+}
+
+.container_2b
+{
+	max-width: 100%;
+	width: 1080px;
+	display: flex;
+	position: relative;
+	z-index: 2;
+}
+
+.info
+{
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.info2
+{
+	font-family: 'Raleway';
+	font-weight: 700;
+	color: #dc143c;
+	font-size: 22px;
+	margin-top: 20px;
+	padding: 23px 250px 23px 16px;
+	border-color: #ffa200;
+	border-radius: 15px;
+	border: 6px solid #ffa200;
+}
+
+.divider
+{
+	background-color: #ffa200;
+	height: 100%;
+	width: 1vh;
+	position: absolute;
+	right: 330px;
+}
+
+.photo
+{
+	position: absolute;
+	right: 0;
+	height: 380px;
+	width:  285px;
+}
+
+{box-sizing: border-box;}
+
+/* Кнопка, используемая для открытия формы чата - исправлена в нижней части страницы */
+.open-button {
+	font-family: 'Raleway';
+	background-color: #555;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 23px;
+	right: 28px;
+	width: 280px;
+}
+
+/* Всплывающий чат - скрыт по умолчанию */
+.form-popup {
+	font-family: 'Raleway';
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+}
+
+/* Добавить стили для контейнера формы */
+.form-container {
+	font-family: 'Raleway';
+	font-size: 150%;
+
+	color: #ffa200;
+	max-width: 300px;
+	padding: 10px;
+	background-color: white;
+}
+
+/* Полная ширина текстовой области */
+.form-container textarea {
+	font-family: 'Raleway';
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+	resize: none;
+	min-height: 200px;
+}
+
+/* Когда текстовое поле получает фокус, сделайте что-нибудь */
+.form-container textarea:focus {
+	font-family: 'Raleway';
+	background-color: #ddd;
+	outline: none;
+}
+
+/* Установите стиль для кнопки отправить/войти */
+.form-container .btn {
+	font-family: 'Raleway';
+	background-color: #ffa200;
+	color: red;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.8;
+}
+
+/* Добавить красный цвет фона для кнопки "Отмена" */
+.form-container .cancel {
+	font-family: 'Raleway';
+	color: #ffa200;
+	background-color: red;
+}
+
+/* Добавить некоторые эффекты наведения на кнопки */
+.form-container .btn:hover, .open-button:hover {
+	font-family: 'Raleway';
+	opacity: 1;
+}
+
+
+
+
+/* Доставка */
+
+.order {
+		font-family: 'Raleway';
+		font-optical-sizing: auto;
+		font-weight:<weight>;
+		font-style: normal;
+}
+
+#orderButton {
+		width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#orderForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#orderFormContent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#orderFormContent label {
+    margin-top: 10px;
+    color: #ff5656;
+		font-weight: 600;
+		font-size: 15px;
+		font-family: 'Raleway';
+}
+
+#orderFormContent input,
+#orderFormContent select {
+    	border: 4px solid #ffa200;
+			border-radius: 10px;
+			height: flex;
+			width: 90%;
+			margin: 9px 0;
+			color: #000000;
+			font-weight: 600;
+			font-size: 15px;
+			font-family: 'Raleway';
+
+}
+
+#orderFormContent button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 80%;
+}
+
+#orderConfirmation {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+.psevdoGrid td {
+	text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.psevdoGrid button {
+	width:100%;
+	border: 1px solid red;
+	background: white;
+  padding: 20px;
+}
+
+.psevdoGrid button:active {
+	background: #ffaaaa;
+}
+
+.psevdoGrid button:hover {
+	background: #ffaaaa;
+}
